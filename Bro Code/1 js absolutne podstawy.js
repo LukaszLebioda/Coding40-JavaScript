@@ -1,3 +1,10 @@
+// podpinamy zewnętrzny plik js:
+// <link rel="stylesheet" href="style.css" type="text/css" />
+
+// ctrl + / daje nam komentarz
+// shift + alt + strzałka w dół kopiuje linijkę
+// csg = console.log(object);
+
 // to output sth on the www page
 console.log("I like pizza!");
 console.log("It's really good!");
@@ -19,6 +26,15 @@ console.log("It's really good!");
 // declaring and then assinging the value 
 // or in one line: let age = 40)
 // 3 types of variable: number, string and boolean (true/false)
+// and we have to create devs in html with their unique id's
+
+/* 
+<p id="name"></p> 
+<p id="age"></p>
+<p id="ifStudent"></p>
+<p id="idNumber"></p>
+*/ 
+
 let age;
 age = 40;
 
