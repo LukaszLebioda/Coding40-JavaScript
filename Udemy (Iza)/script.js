@@ -1,32 +1,38 @@
-// ctrl + / daje nam komentarz
-// shift + alt + strzałka w dół kopiuje linijkę
-// clg = console.log(object);
+// jeżeli number + string to string
+// jeżeli number * string to number
+const num1 = 12;
+const num2 = "12";
+const num3 = num1 + num2;
+console.log(num3);
+const num4 = num1 * num2;
+console.log(num4);
 
-// trzy sposoby klejenia, ten ostatni to tzw. template string i używa znaku gravis `
-// console.log("1 Witaj", namee, "You're", agee, "years old!")
-// console.log("2 Witaj " + namee + " You're" + agee + "years old!")
-// console.log(`3 Witaj ${namee}, You're ${agee} years old!`)
+// Not a Number NaN
+console.log(0/0);
+console.log("abcd" * 12);
 
-const myName = "Łukasz"
-let myAge = 40
+// zaokrąglamy (jako argument podajemy miejsce po przecinku)
+const num5 = 234.67544334;
+console.log(num5.toFixed(1));
 
-console.log(myName)
-console.log(myAge)
+// zamiana stringa na number
+const num6 = "123";
+console.log(parseInt(num6));
 
-console.log("1 Witaj", myName, "You're", myAge, "years old!")
-console.log("2 Witaj " + myName + " You're" + myAge + "years old!")
-console.log(`3 Witaj ${myName}, You're ${myAge} years old!`)
+// --------------------------------------------------
 
-const text = "byleco"
-console.log(typeof text)
+// boolean
+let a = true;
+let b = false;
+console.log(typeof b);
+console.log(a);
+console.log(b);
 
-const quote = 'I powiedział: "Veni, vidi, Deus vincit"';
-
-console.log(quote)
-// string ma tylko jedną właściwość - length
-console.log(quote.length)
-// ale ma wiele metod (wbudowanych funkcji)
-console.log(quote.toUpperCase)
-
-
-
+// najprostsza funkcja:
+const beerAllowed = 17
+if (beerAllowed >= 18) {
+    console.log("true");
+}
+else{
+    console.log("false");
+}
