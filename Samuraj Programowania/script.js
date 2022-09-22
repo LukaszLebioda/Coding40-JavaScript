@@ -10,6 +10,7 @@ console.log(num1==num3);
 trzy === porównuje i sprawdza wartości i typy, ale już bez konwersji
 console.log(num1===num3); */
 
+/* najprosztsza instrukcja warunkowa świata
 let test;
 
 if (34==12) {
@@ -19,3 +20,4 @@ if (34==12) {
 }
 
 console.log(test);
+*/
