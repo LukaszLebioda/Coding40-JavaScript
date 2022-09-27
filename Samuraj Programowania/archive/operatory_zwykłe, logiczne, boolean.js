@@ -30,11 +30,13 @@ console.log(test);
 
 // sprawdzamy false czy true: Boolean(123) albo !!123;
 
-/* 
-null + 3 === 3 || !(5-5) && "1" * 10 >= 10
-kolejność:
-() / ! / * / + / >= / === / && / ||
-*/
+// silnik sprawdza najpierw lewą stronę, 
+// a jak jest true, to już do prawej strony nie przechodzi
+// const operator1 = 20 || 10; zwróci 20
 
+// a jak napotyka false, to sprawdza też drugą stronę
+// 0 || "ghfghf"; zwróci ""ghfghf
 
-
+var a = "yes"
+var b = a || "no vote";
+console.log(b);
