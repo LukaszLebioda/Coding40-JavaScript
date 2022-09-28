@@ -1,33 +1,26 @@
-/* hypotenuse C of a right-angled triangle
+/* let userName = " Łukasz Lebioda ";
 
-let a;
-let b;
-let c;
+console.log(userName);
+console.log(userName.length);
+console.log(userName.charAt(4));
+console.log(userName.indexOf("a"));
+console.log(userName.lastIndexOf("a"));
+console.log(userName.trim());
+console.log(userName.toUpperCase());
+console.log(userName.toLowerCase());
 
-a = window.prompt("Enter length of a");
-a = Number(a);
+let phoneNumber = "513-637-367";
+phoneNumber = phoneNumber.replaceAll("-", "/");
+phoneNumber = phoneNumber.replaceAll("/", "");
+console.log(phoneNumber); */
 
-b = window.prompt("Enter length of b");
-b = Number(b);
+const fullName = "Michael Schumacher";
+let firstName;
+let lastName;
 
-c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+firstName = fullName.slice(0, 7);
+console.log(firstName);
 
-console.log("Side c is", c);
-*/
+lastName = fullName.slice(8, 18);
+console.log(lastName);
 
-let a;
-let b;
-let c;
-
-document.getElementById("submitButton").onclick = function() {
-
-    a = document.getElementById("aTextBox").value;
-    a = Number(a);
-
-    b = document.getElementById("bTextBox").value;
-    b = Number(b);
-
-    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-    document.getElementById("clabel").innerHTML = "The C side is " + c;
-}
