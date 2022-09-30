@@ -1,24 +1,16 @@
+let promo = "30%"
 
-// if & else if
-const password = "sdfgsdgsfgtrhjgfhgdfhdcfgd_87565556001";
-
-if(password.length > 20 && password.includes("!")) {
-    console.log("Masz bardzo dobre hasło!");
-} else if(password.length > 15) {
-    console.log("Masz dosyć dobre hasło!")
-} else {
-    console.log("Masz słabe hasło!");
+switch (promo) {
+    case "20%":
+        console.log("Dziś mamy 20% zniżki!");
+        break
+    case "30%":
+        console.log("Dziś mamy 30% zniżki!!!");
+        break
+    case "10%":
+        console.log("Słabiutka zniżka dziś...");
+    default:
+        console.log("Sorki, dziś nie mamy zniżek :(");
 }
 
-const color = "blue";
 
-// funkcje można zagnieżdżać
-if(color != "blue") {
-    if(10>0) {
-        console.log("true true");
-    } else {
-        console.log("false false");
-    }
-} else {
-    console.log("false");
-}
