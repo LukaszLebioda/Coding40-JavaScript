@@ -1,58 +1,31 @@
-// let animals = ["kojot", "likaon", "jenot", "szakal", "piesiec"]
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers);
 
-// można tak:
-// console.log(animals[0]);
-// console.log(animals[1]);
-// console.log(animals[2]);
-// console.log(animals[3]);
-// console.log(animals[4]);
+// // dodaje elementy na początek tablicy
+// // shift i unshift rzadko używamy, bo zmieniają indeksację całej tablicy
+// numbers.unshift(-9, 101);
+// console.log(numbers);
 
-// ale elementów mogą być setki
-// więc lepiej tak:
-// for (let i = 0; i<=5; i++) {
-//     console.log(animals[i]);
-// }
+// // usuwa element z indeksem 0 (czyli pierwszy w tablicy)
+// numbers.shift();
+// console.log(numbers);
 
-// ale elementów może być mniej lub więcej niż 5
-// a warunek mamy cały czas: i<=5
-// więc najlepiej tak:
+// // dodaje elementy na końcu tablicy (często się używa)
+// numbers.push("abc", 678, 3,14);
+// console.log(numbers);
 
-// for (let i = 0; i<animals.length; i++) {
-//     console.log(animals[i]);
-// }
+// // usuwa ostatni element tablicy
+// numbers.pop();
+// console.log(numbers);
 
-// -------------------------
+// funkcja map (ważna w react.js)
+const numbers = [1, 2, 3, 4, 5]
 
-// for używamy, kiedy wiemy, jak długo ma się pętla wykonywać
-// while używamy, kiedy tego nie wiemy
+function multiply(x) {
+    return x * 2
+}
 
-// let i = 0;
-
-// while (i < 5) {
-//     i++
-//     console.log(i);
-// }
-
-// do ... while to pętla odwrotna do while
-// let i = 0
-
-// do {
-//     i++ 
-//     console.log(i)
-// } while (i < 2)
-
-// a teraz pętla "for ... of":
-// const numbers = [1, 2, 3, 4, 5, 6, 7]
-
-// jeszcze for (lepszy do pracy z konkretnymi indeksami):
-// for (let i=0; i<numbers.length; i++) {
-//     console.log(numbers[i] * 2);
-// }
-
-// ale można lepiej, for ... of (do przeliterowywania):
-// for (const number of numbers) {
-//     console.log(number * 2);
-// }
-
-
+const newNumbers = numbers.map(multiply)
+console.log(numbers);
+console.log(newNumbers);
 
