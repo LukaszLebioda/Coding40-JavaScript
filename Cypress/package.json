@@ -14,6 +14,7 @@
   "author": "Łukasz Lebioda",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.10.0"
+    "cypress": "^10.10.0",
+    "prettier": "^2.7.1"
   }
 }
