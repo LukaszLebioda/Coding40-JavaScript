@@ -14,6 +14,7 @@ console.log(newNumbers);
 numbers.push(6, 7, 8)
 
 // concat - merguje dwie tablice
+// concat może też dodać elementy do tablicy: numbers.concat(123, true, "sdfsdf") i w tym przypomina push
 const abc = ["a", "b", "c", "d"]
 const newAbc = numbers.concat(abc);
 

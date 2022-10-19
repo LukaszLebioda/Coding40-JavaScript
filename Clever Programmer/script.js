@@ -1,15 +1,33 @@
-const fruits = ["banana", "apple", "tomato", "🍐","🍪", "🍇", "🍍", "raspberry", "blueberry"]
-
-// console.log(fruits[0]);
-// console.log(fruits[1]);
-// console.log(fruits[2]);
-// console.log(fruits[3]);
-// console.log(fruits[4]);
-
-// for (let i=0; i<fruits.length; i++) {
-//     console.log(i, fruits[i]);
+// how to make numbers in an array double and create a new array with those doubbled numbers:
+// const double = (numbers) => {
+//     let result = []
+//     for (const number of numbers) {
+//         result.push(number *2)
+//     }
+//     return result
 // }
+// console.log(double([1,2,3,4,5,6,7,8,9,10]));
 
-for (const fruit of fruits) {
-    console.log(fruit);
-}
+// letterCounter:
+// const letterCounter = () => {
+//     const phrase = "Boomshakalaaka madafaka";
+//     for (const letters in phrase) {
+//         console.log(Number(letters) +1);
+//     }
+// }
+// letterCounter();
+
+// letter counter, easier version with prompt:
+// const letterCounter2 = (phrase) => {
+//     return phrase.length
+// } 
+// const phrase = prompt("Write Your phrase")
+// console.log(letterCounter2(phrase))
+
+// funkcja, która doda do siebie wszystkie liczby w tablicy:
+// numbers = [2,4,6,8,10,12]
+// const sumArray = () => {
+//     for (const number of numbers) {
+//         numbers.charAt(number) + 
+//     }
+// }
