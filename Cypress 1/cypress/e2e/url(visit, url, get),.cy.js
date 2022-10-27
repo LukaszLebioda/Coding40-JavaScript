@@ -1,5 +1,5 @@
 // first it - loading URL with timeout option (fails when timeout exceeds 10s)
-// second it - checking whether a certain text is a part of an loaded URL 
+// second it - checking whether a certain text is a part of an URL 
 // third it - checking, whether an element (e.g. a header h1) is visible on the page
 describe("Browser actions", () => {
   it("should load correct URL", () => {
