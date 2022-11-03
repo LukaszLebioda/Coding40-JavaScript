@@ -15,7 +15,7 @@ describe("Basic browser actions 1", () => {
 })
 
 // clicks on links and buttons to check if they're working
-// verifies and displays the number of search results
+// verifies and displays the number of elements (e.g. search results)
 describe("Basic browser actions 2", () => {
   it("should click on 'Fantasy' category", () => {
     cy.get("a").contains("Fantasy").click()
