@@ -1,4 +1,4 @@
-// funkcja podlega hoistingowi (pomimo że najpierw piszemy funkcję, a potem ją wywołujemy, wywołanie fukncji jest hoistingowane na samą górę kodu)
+// funkcja podlega hoistingowi (pomimo że najpierw piszemy funkcję, a potem ją wywołujemy, wywołanie funkcji jest hoistingowane na samą górę kodu)
 // deklaracja funkcji (hoisting)
 
 test()

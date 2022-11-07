@@ -1,45 +1,20 @@
-// funkcja anonimowa, której raczej nie powinniśmy używać
 
-const heading = document.querySelector("h1")
+// operator rest, czyli operator spread, ale w innej roli - używany nie na tablicach, ale na funkcjach
+// jako spread:
+const cities = ["Berlin", "Warszawa", "Beijing"]
+console.log(cities);
+console.log(...cities);
 
-heading.addEventListener("click", function() {
-    console.log("Kliknięto mnie!");
-})
-
-// zamiast funkcji anonimowej postępujmy tak:
-const heading2 = document.querySelector("h2")
-
-function openNavigation() {
-    console.log("Znowu mnie kliknięto!");
+// jako rest - w tym przykładzie loguje nam tylko 3 pierwsze argumenty:
+const numbers = (x, y, z) => {
+    console.log(x, y, z);
 }
-    heading2.addEventListener("click", openNavigation) // callback
+numbers(3,5,6, 456, 342, 55,98)
 
-// funkcja strzałkowa:
-const test = (name) => {
-    console.log("Mam na imię " + name);
+// a w tym przykładzie loguje nam 2 pierwsze argumenty, a resztę argumentów loguje jako tablicę:
+const numbers2 = (x, y, ...z) => {
+    console.log(x, y, z);
+    console.log(z);
 }
-test("Łukasz")
+numbers2(3,5,6, 456, 342, 55,98)
 
-// można zapisać parametr bez nawiasów, jeśli jest jeden:
-const test2 = name => {
-    console.log("Mam na imię " + name);
-}
-test("Gosia")
-
-// można też zapisać nawet bez {}
-const test3 = name => console.log("Mam na imię", name)
-test3("Jeeea")
-
-// jeśli jest więcej argumentów, to () trzeba dać, ale {} nie trzeba:
-const test4 = (name, age) => console.log(name, age)
-test4("Moo", 45)
-
-// funkcja strzałkowa z returnem:
-const add = (num1, num2) => {return num1 * num2}
-// można zapisać też tak (domyślnie to jest return właśnie):
-const add2 = (num1, num2) => num1 + num2
-// ale jak w funkcji jest więcej zadań, to już musimy dać {}:
-const add3 = (num1, num2) => {
-    console.log("bzzzzzz")
-    return num1 - num2
-}
