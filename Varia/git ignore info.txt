@@ -1,0 +1,34 @@
+1) Jeśli ignorujemy plik lub katalog, który już mamy zacommitowany i zapushowany:
+
+a) najpierw wpisujemy w .gitignore polecenia echo:
+
+echo "\test.docx" >> .gitignore
+echo "\Cypress\Cypress Automation Step by Step\node_modules" >> .gitignore
+echo "\Cypress\Cypress Udemy\node_modules" >> .gitignore
+echo "\Varia\my-react-app\node_modules >> .gitignore
+
+b)
+a w Git Bash, tam, gdzie mamy plik lub folder:
+git rm --cached \test.docx
+git rm --cached \node_modules -r (dla C:\...\Coding40-JavaScript\Cypress\Cypress Automation Step by Step)
+git rm --cached \node_modules -r (dla C:\...\Cypress\Cypress Udemy\node_modules)
+git rm --cached \node_modules -r (dla C:\...\Varia\my-react-app\node_modules)
+
+2) Jeśli ignorujemy plik lub katalog, który jeszcze nie został zakomitowany:
+
+/test.txt (jeśli plik znajduje się w root directory projektu)
+
+albo:
+
+/test/text.txt (jeśli plik znajduje się w folderze test w root directory)
+
+albo najlepiej:
+
+node_modules/ (wtedy ignorowane będą wszystkie foldery o tej nazwie, w slash sprawi, że z całą zawartością)
+
+
+
+echo "\Varia\my-react-app\node_modules" >> .gitignore
+
+
+

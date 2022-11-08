@@ -1,4 +1,2 @@
-echo "\Varia\my-react-app\node_modules >> .gitignore
-
 node_modules/
 /test.docx
