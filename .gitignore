@@ -1,6 +1,2 @@
-echo "\test.docx" >> .gitignore
-\test.docx
-
-echo "\Cypress\Cypress Automation Step by Step\node_modules" >> .gitignore
-echo "\Cypress\Cypress Udemy\node_modules" >> .gitignore
-echo "\Varia\my-react-app\node_modules >> .gitignore
+node_modules/
+/test.docx
