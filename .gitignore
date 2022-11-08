@@ -1,0 +1,3 @@
+echo "\test.docx" >> .gitignore
+\test.docx
+
