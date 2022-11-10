@@ -36,3 +36,20 @@ console.log(pineappleIndex);
 
 // if there is no index, the funcion returns -1
 console.log(fruits.indexOf(7));
+
+console.log("--------------------");
+
+// arrays - strings
+let myFruits = ["banana", "apple", "orange", "mango"]
+
+for (const fruit of myFruits) {
+    console.log(fruit);
+}
+
+// sort
+myFruits = myFruits.sort()
+console.log(myFruits);
+
+// sort reversed
+myFruits = myFruits.sort().reverse()
+console.log(myFruits);
