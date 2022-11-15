@@ -1,20 +1,17 @@
+// callback i forEach
 
-// operator rest, czyli operator spread, ale w innej roli - używany nie na tablicach, ale na funkcjach
-// jako spread:
-const cities = ["Berlin", "Warszawa", "Beijing"]
-console.log(cities);
-console.log(...cities);
+const numbers = [0.5, 4, "abc"]
+const names = ["Lisa", "Lily", "Adam", "Przemek"]
 
-// jako rest - w tym przykładzie loguje nam tylko 3 pierwsze argumenty:
-const numbers = (x, y, z) => {
-    console.log(x, y, z);
+numbers.forEach(num => console.log(num * num))
+
+const bigNames = names.map(name => name.toUpperCase())
+console.log(bigNames);
+
+const showBigNames = (name) => {
+    console.log(name.toUpperCase());
 }
-numbers(3,5,6, 456, 342, 55,98)
 
-// a w tym przykładzie loguje nam 2 pierwsze argumenty, a resztę argumentów loguje jako tablicę:
-const numbers2 = (x, y, ...z) => {
-    console.log(x, y, z);
-    console.log(z);
-}
-numbers2(3,5,6, 456, 342, 55,98)
-
+names.forEach(showBigNames)
+console.log("-----------");
+names.forEach(el => console.log(el.toUpperCase()))
