@@ -1,17 +1,41 @@
-// callback i forEach
+// pobieranie elementów na stronie
 
-const numbers = [0.5, 4, "abc"]
-const names = ["Lisa", "Lily", "Adam", "Przemek"]
+console.log("---------stare sposoby------------");
 
-numbers.forEach(num => console.log(num * num))
+// stare sposoby:
+const test = document.getElementById("item");
+console.log(test);
 
-const bigNames = names.map(name => name.toUpperCase())
-console.log(bigNames);
+const test2 = document.getElementsByTagName("h1");
+console.log(test2);
 
-const showBigNames = (name) => {
-    console.log(name.toUpperCase());
-}
+const test3 = document.getElementsByClassName("listItem");
+console.log(test3);
 
-names.forEach(showBigNames)
-console.log("-----------");
-names.forEach(el => console.log(el.toUpperCase()))
+console.log("-------nowe sposoby--------------");
+
+// nowe sposoby:
+
+// znajduje pierwszy element li na stronie
+const test4 = document.querySelector("ul"); 
+console.log(test4);
+// znajduje pierwszy element o id item na stronie (używamy # albo . )
+// jako argument podajemy zapisy jak w css
+const test5 = document.querySelector("#item"); 
+console.log(test5);
+// można szukać w zmiennych
+const ulList = document.querySelector("ul");
+const liItem = ulList.querySelector("li");
+console.log(liItem);
+
+// znajduje wszystkie elementy
+const test6 = document.querySelectorAll("h1"); // ("h1.class") or (".class")
+console.log(test6);
+
+console.log("-------żywe kolekcje---------");
+
+// żywe kolekcje
+const newLi = document.createElement("li");
+ulList.appendChild(newLi).textContent = "qwerty";
+console.log(ulList.length);
+
