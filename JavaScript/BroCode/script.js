@@ -1,35 +1,11 @@
-// callback - a function passed as an argument to another function;
+// array.reduce() - reduces an array to a single valu (e.g. sums up all the elements - like in the online store where items being purchased are summed up in the cart)
 
-// no callback:
-// let total = sum(3, 18);
-// displayConsole(total)
+let prices = [5, 10, 12, 19, 28, 30, 100];
+let total = prices.reduce(checkOut);
 
-// function sum(x, y) {
-//     let result = x + y;
-//     return result
-// } 
+console.log(total);
 
-// function displayConsole(result) {
-//     console.log(result);
-// }
-
-// function displayDOM(result) {
-//     document.getElementById("myLabel"),innerHTML = result;
-// }
-
-// callback (no parenthesis!):
-sum(2, 3, displayConsole);
-sum(2, 3, displayDOM);
-
-function sum(x, y, callBack) {
-    let result = x + y;
-    callBack(result);
+function checkOut(total, item) {
+    return total + item
 }
 
-function displayConsole(result) {
-    console.log(result);
-}
-
-function displayDOM(result) {
-    document.getElementById("myLabel"),innerHTML = result;
-}
