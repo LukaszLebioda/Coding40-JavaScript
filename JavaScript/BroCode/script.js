@@ -8,19 +8,4 @@
 // function checkOut(total, item) {
 //     return total + item
 // }
-// NUMBER CONSTRUCTOR / STRING CONSTRUCTOR / BOOLEAN CONSTRUCTOR
-let age = window.prompt("How old are You?");
-age += 1
-console.log(age);
-// expected ouptut, e.g. 401
-let age2 = window.prompt("How old are You???");
-age2 = Number(age2)
-age2 += 1
-console.log(age2);
-// expected output: eg. 41
-let y = String(3.14)
-console.log(y, typeof y); 
-// expected output: 3.14 string
-let z;
-z = Boolean("dsfsfgfg");
-console.log(z, typeof z);
+
