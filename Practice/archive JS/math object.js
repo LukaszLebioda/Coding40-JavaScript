@@ -1,4 +1,7 @@
-// Math object (rounding)
+
+// Math.random - patrz: random number app (roll a dice) in 'apps(simpleapps)'
+
+// Math round
 let x = 7.1456455433;
 let y = 7.1456455433;
 let z = 7.1456455433;
@@ -12,7 +15,7 @@ console.log(y);
 z = Math.ceil(z);
 console.log(z);
 
-// Math object (expressions)
+// Math pow, MAth sqrt
 let a = 3;
 let b = 144;
 
@@ -22,7 +25,7 @@ console.log(a);
 b = Math.sqrt(b);
 console.log(b);
 
-// Math object (values)
+// Math maximum, minimum
 let s = 3465;
 let t = 6546;
 let u = 2344;

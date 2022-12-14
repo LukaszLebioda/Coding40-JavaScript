@@ -1,0 +1,12 @@
+// e = event
+
+const btn = document.querySelector("button");
+
+const test = (e) => {
+    console.log(e); // wyświetla pointerEvent z metodami, m.in. clientX i clientY
+    console.log(e.target); // wyświetla cały tag button
+    console.log(e.target.classList); // wyświetla klasy przycisku
+    console.log(e.target.offsetTop); // wyświetla ilość pikseli od góry przeglądarki
+}
+
+btn.addEventListener("click", test);

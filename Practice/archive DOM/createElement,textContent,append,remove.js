@@ -28,6 +28,19 @@ div.append(parag, heading);
 div.append("cześć");
 console.log(div);
 
+// -----------------------------------------------------------
+
+// removeChild
+// const div = document.querySelector("div");
+// const par = document.querySelector("p");
+
+// div.removeChild(par);
+// console.log(div);
+
+// // remove
+// div.remove();
+
+
 
 
 
