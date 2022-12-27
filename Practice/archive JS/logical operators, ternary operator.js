@@ -29,3 +29,12 @@ let sunny3 = true;
     } else {
         console.log("It's not especially cold'n'cloudy outside...")
     }
+
+// TERNARY OPERATOR
+// warunek ? true : false
+const number = 90;
+
+number < 100 ? console.log("Too little") : console.log("Enough");
+// albo:
+newNumber = number < 100 ? "Too little" : "Enough";
+console.log(newNumber);
