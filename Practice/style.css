@@ -6,12 +6,6 @@ body
     color: darkblue;
 }
 
-.circles
-{
-    width: 100%;
-    
-}
-
 .circle
 {
     border-radius: 50%;
@@ -21,14 +15,13 @@ body
     height: 100px;
     width: 100px;
     background-color: lime;
-    position: relative;
+    position: absolute;
 }
 .blue
 {
     height: 60px;
     width: 60px;
     background-color: royalblue;
-    position: relative;
     position: absolute;
     top: 0;
     left: 0;
