@@ -3,7 +3,6 @@
 // for loops (example 1 - numbers, example 2 - arrays)
 // break
 // continue
-// nested loops
 
 // ----------------------------------------------------------------
 
@@ -15,11 +14,11 @@ let username = "";
     }
 console.log(`Hello ${username}`);
 
-let i = 0;
-while (i < 5) {
-    i++;
-    console.log(i);
-}
+// let i = 0;
+// while (i < 5) {
+//     i++;
+//     console.log(i);
+// }
 
 // ----------------------------------------------------------------
 
@@ -86,14 +85,6 @@ for (let i = 1; i<=20; i++){
     console.log(i);
 }
 
-// ----------------------------------------------------------------
 
-// nested loops - repeat a for loop 3 times
-for (let i = 1; i <=3; i+=1) {
-   
-    for (let j = 1; j <=3; j = j + 1) {
-        console.log(j);
-    }
 
-}
 

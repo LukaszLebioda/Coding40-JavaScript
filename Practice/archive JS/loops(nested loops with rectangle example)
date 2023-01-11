@@ -1,0 +1,31 @@
+// nested loops - repeat a for loop 3 times
+// building a RECTANGLE:
+
+let rows = window.prompt("Enter no. of rows");
+let columns = window.prompt("Enter no. of columns");
+
+// prints numbers
+// for (let i = 1; i <= rows; i+=1) {
+
+//     for(let j = 1; j <= columns; j++) {
+//         document.getElementById("myRectangle").innerHTML += j; 
+//     }
+//     document.getElementById("myRectangle").innerHTML += "<br>";
+// }
+
+// prints symbols
+
+let symbol = window.prompt("Enter a symbol to use");
+
+for (let i = 1; i <= rows; i+=1) {
+
+    for(let j = 1; j <= columns; j++) {
+        document.getElementById("myRectangle").innerHTML += symbol; 
+    }
+    document.getElementById("myRectangle").innerHTML += "<br>";
+}
+
+// ---------------------------------------
+
+// HTML:
+// <label for="" id="myRectangle"></label>

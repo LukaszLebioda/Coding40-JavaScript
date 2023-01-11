@@ -1,0 +1,32 @@
+// function within a function (global / local variables; arguments / parameters)
+
+startProgram();
+
+function startProgram() {
+    let username = "Luke";
+    let age = 40;
+
+    happyBirthday(username, age);
+}
+
+function happyBirthday(username, age) {
+    console.log(`Happy Birthday ${username}, you're ${age} old`);
+}
+
+// return - returns a value back to the place where a function was invoked;
+// RECTANGLE AREA
+
+let area;
+let width;
+let height;
+
+width = window.prompt("Enter width");
+height = window.prompt("Enter height");
+
+area = getArea(width, height);
+
+console.log("The area is", area);
+
+function getArea(width, height) {
+    return width * height;
+}
